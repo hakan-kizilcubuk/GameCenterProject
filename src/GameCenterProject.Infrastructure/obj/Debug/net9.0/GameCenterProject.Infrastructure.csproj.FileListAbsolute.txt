@@ -15,3 +15,4 @@ C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.In
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.pdb
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.genruntimeconfig.cache
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\ref\GameCenterProject.Infrastructure.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.sourcelink.json
