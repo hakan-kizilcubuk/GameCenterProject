@@ -1,0 +1,17 @@
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\bin\Debug\net9.0\GameCenterProject.Application.deps.json
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\bin\Debug\net9.0\GameCenterProject.Application.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\bin\Debug\net9.0\GameCenterProject.Application.pdb
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\bin\Debug\net9.0\GameCenterProject.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\bin\Debug\net9.0\GameCenterProject.Infrastructure.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\bin\Debug\net9.0\GameCenterProject.pdb
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\bin\Debug\net9.0\GameCenterProject.Infrastructure.pdb
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.csproj.AssemblyReference.cache
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.AssemblyInfoInputs.cache
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.AssemblyInfo.cs
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCent.55BD1050.Up2Date
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\refint\GameCenterProject.Application.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.pdb
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\ref\GameCenterProject.Application.dll

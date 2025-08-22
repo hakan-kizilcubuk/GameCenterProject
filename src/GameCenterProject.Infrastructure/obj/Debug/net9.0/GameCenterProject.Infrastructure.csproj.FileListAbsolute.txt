@@ -1,0 +1,17 @@
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\bin\Debug\net9.0\GameCenterProject.Infrastructure.deps.json
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\bin\Debug\net9.0\GameCenterProject.Infrastructure.runtimeconfig.json
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\bin\Debug\net9.0\GameCenterProject.Infrastructure.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\bin\Debug\net9.0\GameCenterProject.Infrastructure.pdb
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\bin\Debug\net9.0\GameCenterProject.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\bin\Debug\net9.0\GameCenterProject.pdb
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.AssemblyInfo.cs
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCent.CDAA909C.Up2Date
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\refint\GameCenterProject.Infrastructure.dll
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.pdb
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\GameCenterProject.Infrastructure.genruntimeconfig.cache
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Infrastructure\obj\Debug\net9.0\ref\GameCenterProject.Infrastructure.dll
