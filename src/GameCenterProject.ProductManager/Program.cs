@@ -20,6 +20,14 @@ builder.Logging.AddConsole();
 builder.Services.AddApplication();                  // your services (Catalog/Cart/Library)
 builder.Services.AddInfrastructure(builder.Configuration); // DbContext + EF repos + UoW
 
+// (optional) also silence migration chatter
+builder.Logging.AddFilter("Microsoft.EntityFrameworkCore.Migrations", LogLevel.Warning);
+
+// (optional) silence EF query warnings too
+builder.Logging.AddFilter("Microsoft.EntityFrameworkCore.Query", LogLevel.None);
+
+builder.Logging.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.None);
+
 var app = builder.Build();
 
 // ── Run a small demo
