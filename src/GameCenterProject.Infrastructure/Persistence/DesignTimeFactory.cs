@@ -8,7 +8,7 @@ public class DesignTimeFactory : IDesignTimeDbContextFactory<AppDbContext>
 {
     public AppDbContext CreateDbContext(string[] args)
     {
-        var cs = "Server=localhost;Database=GameCenter;Trusted_Connection=True;";
+        var cs = "Server=localhost;Database=GameCenter;Trusted_Connection=True; Encrypt=False;";
         var opts = new DbContextOptionsBuilder<AppDbContext>()
             .UseSqlServer(cs, sql => sql.EnableRetryOnFailure())
             .Options;

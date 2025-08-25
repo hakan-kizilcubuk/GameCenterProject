@@ -15,7 +15,7 @@ namespace GameCenterProject.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration, string connectionName = "Default")
         {
             var cs = configuration.GetConnectionString(connectionName)
-            ?? "Server=localhost;Database=GameCenter;Trusted_Connection=True;";
+            ?? "Server=localhost;Database=GameCenter;Trusted_Connection=True;Encrypt=False;";
 
             services.AddDbContext<AppDbContext>(opt =>
             opt.UseSqlServer(cs, sql =>

@@ -11,7 +11,7 @@ public class EfGameRepository : IGameRepository
     public EfGameRepository(AppDbContext db) => _db = db;
 
     public Task<Game?> FindAsync(Guid id, CancellationToken ct = default)
-        => _db.Games.AsNoTracking().FirstOrDefaultAsync(g => g.Id == id, ct);
+        => _db.Games.FirstOrDefaultAsync(g => g.Id == id, ct);
 
     public async Task<List<Game>> SearchAsync(string? q, int skip, int take, CancellationToken ct = default)
     {

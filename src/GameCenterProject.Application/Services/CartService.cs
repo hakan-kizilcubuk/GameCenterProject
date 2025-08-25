@@ -26,13 +26,20 @@ public sealed class CartService : ICartService
     }
 
     public async Task<Cart> AddGameAsync(string userId, Guid gameId, CancellationToken ct = default)
-    {
-        var cart = await GetOrCreateAsync(userId, ct);
-        var game = await _games.FindAsync(gameId, ct) ?? throw new KeyNotFoundException("Game not found");
-        cart.AddGame(game);              // updates TotalPrice & UpdatedAt in your entity
-        await _uow.SaveChangesAsync(ct);
+{
+    var cart = await GetOrCreateAsync(userId, ct);
+
+    // Skip if already in the cart (prevents duplicate join row + tracking issues)
+    if (cart.Games.Any(g => g.Id == gameId))
         return cart;
-    }
+
+    var game = await _games.FindAsync(gameId, ct)
+               ?? throw new KeyNotFoundException("Game not found");
+
+    cart.AddGame(game);
+    await _uow.SaveChangesAsync(ct);
+    return cart;
+}
 
     public async Task<Cart> RemoveGameAsync(string userId, Guid gameId, CancellationToken ct = default)
     {
