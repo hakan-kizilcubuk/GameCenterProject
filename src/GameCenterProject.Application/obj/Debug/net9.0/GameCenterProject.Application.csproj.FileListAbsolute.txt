@@ -10,9 +10,9 @@ C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Ap
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.AssemblyInfoInputs.cache
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.AssemblyInfo.cs
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.sourcelink.json
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCent.55BD1050.Up2Date
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.dll
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\refint\GameCenterProject.Application.dll
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.pdb
 C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\ref\GameCenterProject.Application.dll
-C:\Users\Ahmet Hakan\OneDrive\Desktop\GameCenterProject\src\GameCenterProject.Application\obj\Debug\net9.0\GameCenterProject.Application.sourcelink.json

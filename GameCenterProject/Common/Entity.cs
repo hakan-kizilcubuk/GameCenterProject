@@ -6,7 +6,7 @@ namespace GameCenterProject.Common
 {
     public abstract class Entity<TId>
     {
-        public TId Id { get; private set; }
+        public TId Id { get; private set; } = default!;
 
         protected Entity(TId id)
         {

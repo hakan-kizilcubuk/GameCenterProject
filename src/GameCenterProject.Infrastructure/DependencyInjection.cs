@@ -36,8 +36,7 @@ namespace GameCenterProject.Infrastructure
                 o.Password.RequireNonAlphanumeric = false;
                 o.Password.RequireUppercase = false;
             })
-            .AddEntityFrameworkStores<AppDbContext>()
-            .AddSignInManager();
+            .AddEntityFrameworkStores<AppDbContext>();
 
             // JWT
             var jwtKey = configuration["Jwt:Key"] ?? "dev-secret-change-me-32chars-minimum----------------";

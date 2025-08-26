@@ -8,7 +8,7 @@ namespace GameCenterProject.Entities
 {
     public class Cart : Entity<Guid>
     {
-        public string UserId { get; private set; }
+        public string UserId { get; private set; } = string.Empty;
         public List<Rating> Ratings { get; private set; } = new List<Rating>();
         public Money TotalPrice { get; private set; } = Money.Zero;
         public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
