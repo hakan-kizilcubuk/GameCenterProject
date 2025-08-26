@@ -1,11 +1,4 @@
 import { api } from './client';
-
-// GET /api/users/{userId}/library
-export function getLibrary(userId) {
-  return api.get(`/users/${encodeURIComponent(userId)}/library`);
-}
-
-// POST /api/users/{userId}/library/purchase
-export function purchaseCart(userId) {
-  return api.post(`/users/${encodeURIComponent(userId)}/library/purchase`);
-}
+const uid = (id)=>encodeURIComponent(id);
+export const getLibrary = (userId)=> api.get(`/users/${uid(userId)}/library`);
+export const purchaseCart = (userId)=> api.post(`/users/${uid(userId)}/library/purchase`);
