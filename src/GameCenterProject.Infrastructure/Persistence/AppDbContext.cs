@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using GameCenterProject.Entities;
-using GameCenterProject.Infrastructure.Auth;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+// ...existing code...
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace GameCenterProject.Infrastructure.Persistence;
 
-public class AppDbContext : IdentityDbContext<ApplicationUser>
+public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
@@ -18,10 +18,19 @@ public class AppDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Tag> Tags => Set<Tag>();
     public DbSet<Cart> Carts => Set<Cart>();
     public DbSet<Library> Libraries => Set<Library>();
+    public DbSet<User> Users => Set<User>();
 
     protected override void OnModelCreating(ModelBuilder b)
 {
-    base.OnModelCreating(b); // REQUIRED for Identity composite keys
+    // User entity configuration
+    b.Entity<User>(e =>
+    {
+        e.HasKey(x => x.Id);
+        e.Property(x => x.Email).IsRequired().HasMaxLength(256);
+        e.Property(x => x.DisplayName).HasMaxLength(128);
+        e.Property(x => x.PasswordHash).IsRequired();
+        e.Property(x => x.CreatedAt).HasDefaultValueSql("SYSUTCDATETIME()");
+    });
 
     // ===== Game =====
     b.Entity<Game>(e =>

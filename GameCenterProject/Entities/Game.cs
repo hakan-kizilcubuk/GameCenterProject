@@ -11,11 +11,11 @@ namespace GameCenterProject.Entities
         private readonly List<GameEdition> _editions = new();
         private readonly List<Tag> _tags = new();
         private readonly List<Genre> _genres = new();
-        public string Title { get; private set; } = default!;
-        public string Description { get; private set; } = default!;
-        public Money Price { get; private set; } = Money.Zero;
-
-        public int ReleaseDate { get; private set; }
+    public string Title { get; private set; } = default!;
+    public string Description { get; private set; } = default!;
+    public Money Price { get; private set; } = Money.Zero;
+    public string ImageUrl { get; set; } = default!;
+    public int ReleaseDate { get; private set; }
 
         private Game() { }
 
