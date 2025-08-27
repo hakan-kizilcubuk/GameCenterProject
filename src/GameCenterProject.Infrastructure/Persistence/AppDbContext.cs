@@ -37,6 +37,7 @@ public class AppDbContext : DbContext
     {
         e.Property(x => x.Title).IsRequired().HasMaxLength(256);
         e.Property(x => x.Description).HasMaxLength(4000);
+        e.Property(x => x.ImageUrl).HasMaxLength(1024);
         e.OwnsOne(x => x.Price, owned =>
         {
             owned.Property(p => p.Amount).HasColumnName("PriceAmount").HasPrecision(18, 2);
