@@ -65,6 +65,8 @@ namespace GameCenterProject.Infrastructure
             services.AddScoped<IGameEditionRepository, EfGameEditionRepository>();
             services.AddScoped<ICartRepository, EfCartRepository>();
             services.AddScoped<ILibraryRepository, EfLibraryRepository>();
+            services.AddScoped<IDiscountRepository, EfDiscountRepository>();
+            services.AddScoped<IUserRepository, EfUserRepository>();
             services.AddScoped<IUnitOfWork, EfUnitOfWork>();
             return services;
         }

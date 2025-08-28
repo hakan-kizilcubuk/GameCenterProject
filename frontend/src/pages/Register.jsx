@@ -17,7 +17,7 @@ export default function Register() {
   };
 
   return (
-    <Container sx={{ py: 8, maxWidth: 520 }}>
+  <Container maxWidth={false} disableGutters sx={{ minHeight: '100vh', width: '100vw', py: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <Typography variant="h4" gutterBottom>Create your account</Typography>
       {err && <Alert severity="error" sx={{ mb: 2 }}>{err}</Alert>}
       <Box component="form" onSubmit={submit} sx={{ display:'grid', gap:2 }}>

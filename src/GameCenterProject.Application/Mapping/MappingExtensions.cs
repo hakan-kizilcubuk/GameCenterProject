@@ -11,7 +11,7 @@ public static class MappingExtensions
 
     // Quick summaries (returning anonymous objects via 'object' – handy in controllers if you don't want DTOs)
     public static object ToSummary(this Game g)
-        => new { g.Id, g.Title, Price = new { g.Price.Amount, g.Price.Currency }, g.ReleaseDate, g.ImageUrl };
+    => new { g.Id, g.Title, g.Description, Price = new { g.Price.Amount, g.Price.Currency }, g.ReleaseDate, g.ImageUrl };
 
     public static object ToCartView(this Cart c)
         => new {

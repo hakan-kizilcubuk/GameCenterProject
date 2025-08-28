@@ -18,6 +18,7 @@ public class AppDbContext : DbContext
     public DbSet<Cart> Carts => Set<Cart>();
     public DbSet<Library> Libraries => Set<Library>();
     public DbSet<User> Users => Set<User>();
+    public DbSet<Discount> Discounts => Set<Discount>();
 
     protected override void OnModelCreating(ModelBuilder b)
 {
@@ -123,6 +124,17 @@ public class AppDbContext : DbContext
                 // Ensure the join column matches Library.UserId size:
                 j.Property<string>("LibraryUserId").HasMaxLength(128).HasColumnType("nvarchar(128)");
             });
+    });
+    // ===== Discount =====
+    b.Entity<Discount>(e =>
+    {
+        e.HasKey(x => x.Id);
+        e.Property(x => x.GameId).IsRequired();
+        e.Property(x => x.Percentage).HasPrecision(5, 2);
+        e.Property(x => x.Amount).HasPrecision(18, 2);
+        e.Property(x => x.StartDate).IsRequired();
+        e.Property(x => x.EndDate).IsRequired();
+        e.Property(x => x.CreatedBy).HasMaxLength(256);
     });
 }
 

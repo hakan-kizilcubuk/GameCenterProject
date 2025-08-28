@@ -8,9 +8,10 @@ public static class ApplicationSetup
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
-        services.AddScoped<ICatalogService, CatalogService>();
-        services.AddScoped<ICartService, CartService>();
-        services.AddScoped<ILibraryService, LibraryService>();
+    services.AddScoped<ICatalogService, CatalogService>();
+    services.AddScoped<ICartService, CartService>();
+    services.AddScoped<ILibraryService, LibraryService>();
+    services.AddScoped<IDiscountService, DiscountService>();
         return services;
     }
 }
