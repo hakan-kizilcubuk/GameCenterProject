@@ -10,6 +10,6 @@ namespace GameCenterProject.Entities
         public decimal? Amount { get; set; } // optional fixed amount off
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public string CreatedBy { get; set; } // admin user id or email
+        public string? CreatedBy { get; set; } // admin user id or email
     }
 }

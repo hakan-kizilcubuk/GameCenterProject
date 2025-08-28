@@ -1,6 +1,7 @@
 import { ThemeProvider, CssBaseline, Box } from '@mui/material';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import theme from './theme';
+import { useState, useMemo } from 'react';
+import { getTheme } from './theme';
 import AuthProvider from './context/AuthContext';
 import ProtectedRoute from './routes/ProtectedRoute';
 
@@ -14,12 +15,19 @@ import Register from './pages/Register';
 import AdminDashboard from './pages/AdminDashboard';
 
 export default function App() {
+  const [mode, setMode] = useState(() => localStorage.getItem('themeMode') || 'light');
+  const theme = useMemo(() => getTheme(mode), [mode]);
+  const toggleMode = () => {
+    const next = mode === 'light' ? 'dark' : 'light';
+    setMode(next);
+    localStorage.setItem('themeMode', next);
+  };
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <AuthProvider>
         <BrowserRouter>
-          <NavBar />
+          <NavBar mode={mode} toggleMode={toggleMode} />
           <Box sx={{ minHeight: '100vh' }}>
             <Routes>
               <Route path="/" element={<Catalog />} />

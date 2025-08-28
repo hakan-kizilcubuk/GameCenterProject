@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 
-export default function NavBar() {
+export default function NavBar({ mode, toggleMode }) {
   const { user, logout } = useAuth();
   const [anchor, setAnchor] = useState(null);
   const nav = useNavigate();
@@ -21,6 +21,10 @@ export default function NavBar() {
             <Button component={Link} to="/admin" color="secondary" variant="contained">Admin Dashboard</Button>
           )}
         </Box>
+
+        <Button onClick={toggleMode} color="inherit" sx={{ ml: 2 }}>
+          {mode === 'dark' ? 'Light Mode' : 'Dark Mode'}
+        </Button>
 
         <Box sx={{ flexGrow: 1 }} />
         {user ? (

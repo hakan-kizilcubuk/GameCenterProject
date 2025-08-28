@@ -17,6 +17,8 @@ public class DiscountAdminController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] Discount discount, [FromQuery] string adminUserId, CancellationToken ct)
     {
+    // Ignore CreatedBy from client, set it in service
+    discount.CreatedBy = "";
         var d = await _discounts.CreateAsync(discount, adminUserId, ct);
         return Ok(d);
     }
