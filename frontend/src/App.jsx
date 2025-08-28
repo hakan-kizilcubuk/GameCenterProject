@@ -11,6 +11,7 @@ import CartPage from './pages/CartPage';
 import LibraryPage from './pages/LibraryPage';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import AdminDashboard from './pages/AdminDashboard';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
               <Route path="/library" element={<ProtectedRoute><LibraryPage /></ProtectedRoute>} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
             </Routes>
           </Box>
         </BrowserRouter>

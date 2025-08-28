@@ -17,6 +17,9 @@ export default function NavBar() {
           <Button component={Link} to="/" color="inherit">Catalog</Button>
           <Button component={Link} to="/cart" color="inherit">Cart</Button>
           <Button component={Link} to="/library" color="inherit">Library</Button>
+          {user?.role === 'admin' && (
+            <Button component={Link} to="/admin" color="secondary" variant="contained">Admin Dashboard</Button>
+          )}
         </Box>
 
         <Box sx={{ flexGrow: 1 }} />

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameCenterProject.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0f4141e7eca966b2e91f9e36dfbe17ec5fe9c81")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78d0d854efdccc97758aee1440da7ff263e8ec42")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameCenterProject.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameCenterProject.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
