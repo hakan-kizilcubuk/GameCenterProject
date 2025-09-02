@@ -44,6 +44,13 @@ public class AppDbContext : DbContext
             owned.Property(p => p.Currency).HasColumnName("PriceCurrency").HasMaxLength(3);
         });
 
+        // Configure OriginalPrice as owned value object
+        e.OwnsOne(x => x.OriginalPrice, owned =>
+        {
+            owned.Property(p => p.Amount).HasColumnName("OriginalPriceAmount").HasPrecision(18, 2);
+            owned.Property(p => p.Currency).HasColumnName("OriginalPriceCurrency").HasMaxLength(3);
+        });
+
         // If you want to persist _editions (field-backed nav):
         e.HasMany(typeof(GameEdition), "_editions")
          .WithOne()

@@ -16,8 +16,12 @@ public static class MappingExtensions
         g.Title,
         g.Description,
         Price = new { g.Price.Amount, g.Price.Currency },
+        OriginalPrice = g.OriginalPrice != null ? new { g.OriginalPrice.Amount, g.OriginalPrice.Currency } : null,
         g.ReleaseDate,
-        g.ImageUrl
+        g.ImageUrl,
+        Editions = g.GetType().GetField("_editions", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)?.GetValue(g) is IEnumerable<GameEdition> editions
+            ? editions.Select(e => (object)new { e.Id, e.Name, e.Description, Price = new { e.Price.Amount, e.Price.Currency } }).ToList()
+            : new List<object>()
     };
 
     public static object ToCartView(this Cart c)

@@ -14,6 +14,7 @@ namespace GameCenterProject.Entities
     public string Title { get; private set; } = default!;
     public string Description { get; private set; } = default!;
     public Money Price { get; private set; } = Money.Zero;
+    public Money? OriginalPrice { get; private set; } = null;
     public string ImageUrl { get; set; } = default!;
     public int ReleaseDate { get; private set; }
 
@@ -48,6 +49,10 @@ namespace GameCenterProject.Entities
         public void ChangePrice(Money newPrice)
         {
             if (newPrice == null) throw new ArgumentNullException(nameof(newPrice));
+            if (OriginalPrice == null && !Price.Equals(newPrice))
+            {
+                OriginalPrice = Price;
+            }
             Price = newPrice;
         }
 

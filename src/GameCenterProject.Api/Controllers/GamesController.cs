@@ -1,6 +1,9 @@
 using GameCenterProject.Application.Services;
 using GameCenterProject.Application.Mapping;
 using Microsoft.AspNetCore.Mvc;
+using GameCenterProject.Infrastructure.Abstract;
+using GameCenterProject.Entities;
+using GameCenterProject.ValueObjects;
 
 namespace GameCenterProject.Api.Controllers;
 
@@ -10,6 +13,19 @@ public class GamesController : ControllerBase
 {
     private readonly ICatalogService _catalog;
     public GamesController(ICatalogService catalog) => _catalog = catalog;
+
+    public record AddEditionRequest(string Name, string Description, decimal Amount, string Currency);
+
+    [HttpPost("{id:guid}/editions")]
+    public async Task<IActionResult> AddEdition(Guid id, [FromBody] AddEditionRequest req, [FromServices] IGameRepository gamesRepo, CancellationToken ct)
+    {
+        var game = await gamesRepo.FindAsync(id, ct);
+        if (game == null) return NotFound();
+        var edition = new GameEdition(req.Name, req.Description, new Money(req.Amount, req.Currency));
+        game.AddEdition(edition);
+        await gamesRepo.AddAsync(game, ct); // If using EF, this will track changes
+        return Ok();
+    }
 
     [HttpGet]
     public async Task<IActionResult> Search([FromQuery] string? q, [FromQuery] int page = 1, [FromQuery] int pageSize = 20, CancellationToken ct = default)

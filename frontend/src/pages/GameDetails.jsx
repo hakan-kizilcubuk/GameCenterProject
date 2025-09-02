@@ -32,6 +32,22 @@ export default function GameDetails() {
         <Button variant="contained" disabled={!userId} onClick={async()=>{ if(userId){ await addToCart(userId, id); await getCart(userId); } }}>
           Add to cart
         </Button>
+
+        {/* Editions List */}
+        {game.editions && game.editions.length > 0 && (
+          <Box sx={{ mt: 4 }}>
+            <Typography variant="h6" sx={{ mb: 2 }}>Available Editions</Typography>
+            <Stack spacing={2}>
+              {game.editions.map(edition => (
+                <Box key={edition.id} sx={{ p: 2, border: '1px solid #eee', borderRadius: 2 }}>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>{edition.name}</Typography>
+                  <Typography color="text.secondary" sx={{ mb: 1 }}>{edition.description}</Typography>
+                  <Typography sx={{ fontWeight: 800 }}>{edition.price.amount} {edition.price.currency}</Typography>
+                </Box>
+              ))}
+            </Stack>
+          </Box>
+        )}
       </Container>
     </Box>
   );
